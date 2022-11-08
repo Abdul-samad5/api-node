@@ -3,7 +3,7 @@ const {config}=require("dotenv")
 config()
 async function connect(uri){
     try {
-        mongoose.connect(uri||process.env.MONGO_DB_LOCAL)
+        mongoose.connect( uri || process.env.MONGO_URL)
         console.log('connected to the mongo')
     } catch (error) {
         console.log(error.message)
