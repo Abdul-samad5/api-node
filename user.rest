@@ -1,0 +1,15 @@
+GET http://localhost:4000/user HTTP/1.1
+
+###
+GET http://localhost:4000/user/63694bd488cb8beecbda29b2 HTTP/1.1
+###
+POST http://localhost:4000/user
+Content-Type: application/json
+
+{
+    "name":"ayo",
+    "content":"jsajrsbjibszjseh"
+}
+
+###
+DELETE http://localhost:4000/user/63694c0353c6831160fd3c32
