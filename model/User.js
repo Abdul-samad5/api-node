@@ -1,5 +1,5 @@
 const{Schema, model} = require("mongoose")
-const userSchema = new Schema({
+const todoSchema = new Schema({
     name:{
         type: String
     },
@@ -12,6 +12,6 @@ const userSchema = new Schema({
 {timestamps: true}
 )
 
-const userModel = model("users", userSchema)
+const userModel = model("Todo", todoSchema)
 
 module.exports = userModel
