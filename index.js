@@ -6,11 +6,11 @@ const userRoute = require("./router/userRouter")
 const port =   process.env.PORT || 4000
 connect()
 app.use(json())
-app.use("/user", userRoute)
-app.get("/",(req,res)=>{
-    res.send("hello everyone")
+app.use("/", userRoute)
+// app.get("/",(req,res)=>{
+//     res.send("hello everyone")
     
-})
+// })
 app.listen(port, ()=>{
     console.log(`listening to port ${port}`)
 })

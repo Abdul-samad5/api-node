@@ -7,9 +7,9 @@ POST http://localhost:4000/user
 Content-Type: application/json
 
 {
-    "name":"me",
-    "content":"jsajrsbjibszjseh"
+    "name":"who is that",
+    "content":"whats is going"
 }
 
 ###
-DELETE http://localhost:4000/user/63694c0353c6831160fd3c32
+DELETE https://againcrud9.herokuapp.com/user/6370bcea6d1ab396bb9c6266
